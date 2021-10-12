@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <test verbose="2" preserve-order="true" name="/Users/bkaratepe/Desktop/auto/Invio-example">
+        <classes>
+            <class name="Tests.SearchTest">
+                <parameter name="browserName" value="chrome"/>
+                <methods>
+                    <include name="searchMethod"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+    <test verbose="2" preserve-order="true" name="Test - 2">
+        <classes>
+            <class name="Tests.SearchTest">
+                <parameter name="browserName" value="firefox"/>
+                <methods>
+                    <include name="searchMethod"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
